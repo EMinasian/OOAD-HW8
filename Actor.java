@@ -7,37 +7,28 @@ import java.util.*;
  */
 public class Actor {
 
-    /**
-     * Default constructor
-     */
-    public Actor() {
-    }
+    private int actorID;
+    private double amount;
+    private String personalData;
 
-    /**
-     * 
-     */
-    private ActorID actorID;
 
-    /**
-     * 
-     */
-    private void amount;
+//    public Actor(int actorID, String personalData, double amount) {
+//    	this.actorID = actorID;
+//    	this.personalData = personalData;
+//    	this.amount = amount;
+//    }
+    
+    
+//    public void create(void actorID, void personalData, void amount) {
+//        // TODO implement here
+//    }
 
-    /**
-     * 
-     */
-    private void personalData;
+    public Actor(int actorID2, String personalData2, double amount2) {
+		// TODO Auto-generated constructor stub
+	}
 
-    /**
-     * @param actorID 
-     * @param personalData 
-     * @param amount
-     */
-    public void create(void actorID, void personalData, void amount) {
-        // TODO implement here
-    }
 
-    /**
+	/**
      * @param commissionPrctg 
      * @param o
      */
