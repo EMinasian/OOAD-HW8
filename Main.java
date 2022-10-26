@@ -36,7 +36,7 @@ public class Main {
 		System.out.println();
 		System.out.println();
 		System.out.println("We choose the commissionPrctg equal to 0.5 to make amount calculations easier for us! "
-				+ "In case of other values we should calculate the amounts one more time");
+				+ "In the case of other values, we should calculate the amounts one more time by hand to be able to compare them with the ones achieved from the code");
 		
 		
 	}
