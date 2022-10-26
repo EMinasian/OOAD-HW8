@@ -1,9 +1,6 @@
-
-import java.util.*;
 import java.time.LocalTime;
 
-public class System {
-
+public class MarketSystem {
     private double amount;
     private double commissionPrctg;
     private ActorCatalog actorCatalog;
@@ -11,7 +8,7 @@ public class System {
     private ProductCatalog productCatalog;
     private TransactionCatalog transactionCatalog;
     
-    public System() {
+    public MarketSystem() {
     	actorCatalog = new ActorCatalog();
     	offerCatalog = new OfferCatalog();
     	productCatalog = new ProductCatalog();
@@ -42,5 +39,4 @@ public class System {
     private void updateAmount(Offer o) {
     	this.amount = o.getTotalPrice() * commissionPrctg + this.amount;
     }
-
 }

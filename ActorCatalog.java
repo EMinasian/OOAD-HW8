@@ -24,8 +24,7 @@ public class ActorCatalog {
      * @return
      */
     private int generateActorID() {
-        counter++;
-        return counter;
+        return counter++;
     }
 
     /**
