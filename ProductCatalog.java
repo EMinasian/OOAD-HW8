@@ -1,4 +1,3 @@
-package Design Class Diagram;
 
 import java.util.*;
 
@@ -7,31 +6,23 @@ import java.util.*;
  */
 public class ProductCatalog {
 
-    /**
-     * Default constructor
-     */
+
+	Map<Integer, Product> products = new HashMap<>();
+	
     public ProductCatalog() {
     }
 
-    /**
-     * 
-     */
-    private Product products {Map};
-
-    /**
-     * @param productID 
-     * @return
-     */
-    public Product getProduct(void productID) {
-        // TODO implement here
+    
+    public Product getProduct(int productID) {
+        if(products.containsKey(productID)) {
+        	return products.get(productID);
+        }
         return null;
     }
 
-    /**
-     * 
-     */
-    private void load() {
-        // TODO implement here
-    }
+
+//    private void load() {
+//        // TODO implement here
+//    }
 
 }

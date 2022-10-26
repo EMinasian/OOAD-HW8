@@ -1,5 +1,3 @@
-//package Design Class Diagram;
-
 import java.util.*;
 
 /**
@@ -7,20 +5,16 @@ import java.util.*;
  */
 public class Product {
 
-    /**
-     * Default constructor
-     */
-    public Product() {
+    private String description;
+    private int productID;
+    
+    public Product(int id, String description) {
+    	this.description = description;
+    	this.productID = id;
     }
 
-    /**
-     * 
-     */
-    private void description;
-
-    /**
-     * 
-     */
-    private void productID;
+    public int getID() {
+    	return this.productID;
+    }
 
 }
