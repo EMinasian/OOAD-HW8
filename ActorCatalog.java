@@ -8,12 +8,11 @@ import java.util.*;
 public class ActorCatalog {
 	
 	private int counter;
-	private List<Actor> actors;
+	private List<Actor> actors = new ArrayList<>();
 
 
     public ActorCatalog() {
     	counter = 0;
-    	actors = new ArrayList<Actor>();
     }
 
     /**
