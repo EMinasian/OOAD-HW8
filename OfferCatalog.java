@@ -1,65 +1,40 @@
-//package Design Class Diagram;
-
 import java.util.*;
 
-/**
- * 
- */
+
 public class OfferCatalog {
 
-    /**
-     * Default constructor
-     */
+	private int counter;
+	private List<Offer> offers = new ArrayList<>();
+	
     public OfferCatalog() {
+    	counter = 0;
     }
 
-    /**
-     * 
-     */
-    private Offer offers {List};
-
-    /**
-     * @param o
-     */
-    public void delete(void o) {
-        // TODO implement here
+    public void delete(Offer o) {
+        for(int i = 1; i <= offers.size(); i++) {
+        	if(offers.get(1).getID() == o.getID()) {
+        		offers.set(i, null);
+        		return;
+        	}
+        }
     }
 
-    /**
-     * @return
-     */
-    private OfferID generateOfferID() {
-        // TODO implement here
-        return null;
+    private int generateOfferID() {
+    	  return counter++;
+
     }
 
-    /**
-     * @param offerID 
-     * @return
-     */
-    public Offer getOffer(void offerID) {
-        // TODO implement here
-        return null;
+
+    public Offer getOffer(int offerID) {
+        return offers.get(offerID);
     }
 
-    /**
-     * 
-     */
-    private void load() {
-        // TODO implement here
-    }
 
-    /**
-     * @param a 
-     * @param offerType 
-     * @param p 
-     * @param quantity 
-     * @param price 
-     * @return
-     */
-    public OfferID makeOffer(void a, void offerType, void p, void quantity, void price) {
-        // TODO implement here
-        return null;
+    public int makeOffer(Actor a, String offerType, Product p, int quantity, double price) {
+    	int id = generateOfferID();
+    	Offer offer = new Offer(a, p, id, offerType, quantity, price);
+    	offers.add(id, offer);
+        return id;
     }
 
 }

@@ -1,5 +1,3 @@
-//package Design Class Diagram;
-
 import java.util.*;
 
 /**
@@ -8,12 +6,11 @@ import java.util.*;
 public class ActorCatalog {
 	
 	private int counter;
-	private List<Actor> actors;
+	private List<Actor> actors = new ArrayList<>();
 
 
     public ActorCatalog() {
     	counter = 0;
-    	actors = new ArrayList<Actor>();
     }
 
     /**
@@ -25,8 +22,7 @@ public class ActorCatalog {
      * @return
      */
     private int generateActorID() {
-        counter++;
-        return counter;
+        return counter++;
     }
 
     /**
@@ -37,12 +33,6 @@ public class ActorCatalog {
         return actors.get(actorID);
     }
 
-    /**
-     * 
-     */
-    private void load() {
-        // TODO implement here
-    }
 
     /**
      * @param personalData 
