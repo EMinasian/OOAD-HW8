@@ -13,6 +13,9 @@ public class System {
     
     public System() {
     	actorCatalog = new ActorCatalog();
+    	offerCatalog = new OfferCatalog();
+    	productCatalog = new ProductCatalog();
+    	transactionCatalog = new TransactionCatalog();
     }
 
     public int makeActor(String personalData, double amount) {
